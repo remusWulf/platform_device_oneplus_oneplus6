@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Get non-open-source specific aspects
-#$(call inherit-product, vendor/oneplus/oneplus6/oneplus6-vendor.mk)
+$(call inherit-product, vendor/oneplus/sdm845-common/sdm845-common-vendor.mk)
 
 # setup dalvik vm configs
 #$(call inherit-product, frameworks/native/build/phone-xhdpi-8192-dalvik-heap.mk)
@@ -423,10 +423,10 @@ PRODUCT_PACKAGES += \
     libqti-perfd-client
 
 # Prebuilts
-PRODUCT_PACKAGES += \
-    OnePlusCamera \
-    OnePlusGallery \
-    OnePlusCameraService
+#PRODUCT_PACKAGES += \
+#    OnePlusCamera \
+#    OnePlusGallery \
+#    OnePlusCameraService
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilts/etc/permissions/privapp-permissions-oem-system.xml:system/etc/permissions/privapp-permissions-oem.xml \
@@ -444,8 +444,8 @@ PRODUCT_PACKAGES += \
     libsensorndkbridge
 
 # Smart Charge
-PRODUCT_PACKAGES += \
-    vendor.syberia.smartcharge@1.0-service
+#PRODUCT_PACKAGES += \
+#    vendor.syberia.smartcharge@1.0-service
 
 # Telephony
 PRODUCT_PACKAGES += \
@@ -517,7 +517,7 @@ PRODUCT_PACKAGES += \
     WfdCommon
 
 #PRODUCT_COPY_FILES += \
-#    $(LOCAL_PATH)/configs/privapp-permissions-wfd.xml:system/etc/permissions/privapp-permissions-wfd.xml
+    $(LOCAL_PATH)/configs/privapp-permissions-wfd.xml:system/etc/permissions/privapp-permissions-wfd.xml
 
 # Updater
 PRODUCT_PACKAGES += \

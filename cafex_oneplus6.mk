@@ -14,19 +14,20 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+# Inherit from oneplus device
+$(call inherit-product, device/oneplus/oneplus6/device.mk)
 
 # Inherit from those products. Most specific first.
+$(call inherit-product, vendor/extended/common.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from oneplus device
-$(call inherit-product, device/oneplus/oneplus6/device.mk)
 
 # Inherit some common Syberia stuff.
 #$(call inherit-product, vendor/syberia/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := syberia_oneplus6
+PRODUCT_NAME := cafex_oneplus6
 PRODUCT_DEVICE := oneplus6
 PRODUCT_BRAND := OnePlus
 PRODUCT_MANUFACTURER := OnePlus
@@ -46,4 +47,4 @@ TARGET_VENDOR := OnePlus
 
 TARGET_BOOT_ANIMATION_RES := 2160
 
-SYBERIA_BUILD_TYPE := OFFICIAL
+#SYBERIA_BUILD_TYPE := OFFICIAL

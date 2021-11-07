@@ -12,9 +12,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/syberia_oneplus6.mk
+    $(LOCAL_DIR)/cafex_oneplus6.mk
 
 COMMON_LUNCH_CHOICES := \
-    syberia_oneplus6-user \
-    syberia_oneplus6-userdebug \
-    syberia_oneplus6-eng
+    cafex_oneplus6-user \
+    cafex_oneplus6-userdebug \
+    cafex_oneplus6-eng
