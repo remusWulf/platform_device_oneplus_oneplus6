@@ -23,7 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/oneplus6/device.mk)
 
 # Inherit some common Syberia stuff.
-$(call inherit-product, vendor/syberia/common.mk)
+#$(call inherit-product, vendor/syberia/common.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := syberia_oneplus6
